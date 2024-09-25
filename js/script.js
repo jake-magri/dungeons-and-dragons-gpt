@@ -1,4 +1,4 @@
-//Game Objects test
+//Game Objects
 
 const player = {
     name: "Hero",
