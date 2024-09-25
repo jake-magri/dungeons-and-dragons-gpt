@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D&D Game</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    #game { padding: 20px; border: 1px solid black; width: 300px; margin: 20px auto; }
+    .stats { margin-bottom: 10px; }
+    button { margin-right: 10px; }
+  </style>
+</head>
+<body>
+  <div id="game">
+    <div class="stats">
+      <p id="player-stats">Player Health: 100</p>
+      <p id="monster-stats">Monster Health: 50</p>
+    </div>
+    <div>
+      <button onclick="playerAction('attack')">Attack</button>
+      <button onclick="playerAction('defend')">Defend</button>
+      <button onclick="playerAction('run')">Run</button>
+    </div>
+    <p id="log"></p>
+  </div>
+
+  <script defer src="script.js"></script>
+</body>
+</html>
